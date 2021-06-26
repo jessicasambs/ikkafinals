@@ -1,0 +1,40 @@
+<html>
+
+<body bgcolor= "khaki">
+<title>Daily Plans</title>
+<h1 style="color:white; font-size:50px; background-color:olive"> <center>Laundrika</center> </h1>
+<h2 style="color:red; font-size:15px; font-style:oblique; font-family:sans-serif; "> <center>your buddy to wash away your worries!...</center> </h2>
+<br>
+<h3 style="color:black; font-size:25px; "><center>-SignUp-</center></h3>
+
+<form class ="form" action="" method="post">
+	{% csrf_token %}
+	<center>
+	<center>
+  <input type="date" id="date" name="date"> </center>
+  <br><br>
+  	<label>Name:</label>
+	<input bold type="text" id="Name" name="Name" placeholder= "Enter your Name">
+	<br><br>
+	<label>Address:</label>
+	<input bold type="text" id="Address" name="Address" placeholder= "Enter your Address">
+	<br><br>
+	<label>Contact Name:</label>
+	<input bold type="text" id="Contact_Number" name="Contact_Number" placeholder= "Enter your ContactNumber">
+	<br><br>
+	<label>Email:</label>
+	<input bold type="text" id="Email" name="Email" placeholder= "Enter your Email">
+	<br><br>
+	<label>Contact Person:</label>
+	<input bold type="text" id="Contact_Person" name="Contact_Person" placeholder= "Enter your ContactPerson">
+<br>
+<br>
+<input type="submit" value="submit" name="done" id="done">
+<br>
+<br>
+<p>Kindly fillout this SignUp form.<p> 
+</form>
+</center>
+</center>
+</body>
+</html>

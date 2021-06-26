@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Payments</title>
+    <link href="paymentform.css" rel="stylesheet">
+</head>
+<body bgcolor="khaki">
+    <div class="wrapper">
+        <h1 style="color:white; font-size:50px; background-color:olive"><center>Payment Form</center></h1>
+        <center>
+        <form method="POST">
+            <h2>Account</h2>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required class="name">
+                  </div>
+                  <br>
+                  <div class="input-box">
+                      <input type="text" placeholder="Address" required class="name">
+                  </div> 
+                </div>
+                 <br>
+          <div class="input-group">
+            <div class="input-box">
+              <input type="email" placeholder="Email Address" required class="name">
+            </div>
+          </div>
+          <br>
+
+          <div class="input-group">
+            <div class="input-box">
+              <h8>Date of Birth</h8>
+              <input type="text" placeholder="DD" class="dob">
+              <input type="text" placeholder="MM" class="dob">
+              <input type="text" placeholder="YYYY" class="dob">
+            </div>
+          </div>
+          <br>
+
+            <div class="input-box">
+              <h9>Gender</h9>
+              <input type="radio" id="b1" name="gendar" checked class="radio">
+              <label for="b1">Male</label>
+              <input type="radio" id="b2" name="gendar" checked class="radio">
+              <label for="b2">Female</label>
+            </div>
+          </div>
+          <br>
+            <center>
+          <div class="input-group">
+            <div class="input-box">
+              <h3>Payment Details</h3>
+              <input type="radio" name="pay" id="bc1" checked class="radio">
+              <label for="bc1"><span></span>Paymaya 09164545456</label>
+              <br>
+              <input type="radio" name="pay" id="bc2" checked class="radio">
+              <label for="bc2"><span></span>Gcash 09194545456</label>
+              <br>
+              <input type="radio" name="pay" id="bc3" checked class="radio">
+              <label for="bc3"><span></span>Paypal 09194545456</label>
+              <br>
+              <input type="radio" name="pay" id="bc4" checked class="radio">
+              <label for="bc4"><span></span>CashOnDelivery</label>
+            </div>
+          </div>
+          <br>
+
+          <div class="input-group">
+            <div class="input-box">
+              <button type="submit">Submit</button>
+               <b> <a href="delivery"target="_top">back</a></b>
+            </div>
+          </div>
+          {% csrf_token %}
+      </form>
+    </center>
+      </center>
+    </div>
+</body>
+</html>

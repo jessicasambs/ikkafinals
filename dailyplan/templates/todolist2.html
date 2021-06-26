@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Plans</title>
+</head>
+<style>
+table, td, th{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body bgcolor="khaki">
+<center><h1 style="color:white; font-size:50px; background-color:olive">Daily Plans</h1></center>
+<table style="width:100%">
+  <tr>
+  
+    <th>Date: </th>
+    <th>Name:</th>
+    <th>Address: </th>
+    <th>Contact_Number:</th>
+    <th>Email:</th>
+    <th>Contact_Person:</th>
+    </tr>
+<div class="iks">
+	{% for iks in iks %}
+	<div class="iks">
+
+    <tr>
+    <td>{{ forloop.counter }}:{{ iks.date}}</td>
+    <td>{{ iks.Name }}</td>
+    <td>{{ iks.Address }}</td>
+    <td>{{ iks.Contact_Number }}</td>
+    <td>{{ iks.Email }}</td>
+    <td>{{ iks.Contact_Person }}</td>
+
+  </tr>
+
+
+</div>
+	{% endfor %}
+	</table>
+    <br>
+    <br>
+    <center>
+<b><a href="about"target="_top">Next</a></b>
+    </center>
+</body>
+</html>
+

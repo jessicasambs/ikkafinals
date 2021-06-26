@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="khaki">
+<center>
+<form>
+<h3 style="color:white; font-size:50px; background-color:olive"><center>Equipments</center></h3>
+<center>
+<script>
+  let sum = 0;
+
+let addPrice = (elem) => {
+  let value = parseFloat(elem.value.replace(/\$|,/g, ''), 2);
+  
+  elem.checked ? (sum += value) : (sum -= value);
+
+  document.getElementById('result').innerHTML = sum;
+};
+</script>
+<table>
+  <tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="Washing_Machine" value="75.00" onchange="addPrice(this)" />
+        <label>Washing Machine:</label>
+        <td>
+          <div class="price-container text-bold">
+            <b>PHP</b>75.00
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="Washing_Machine_Dryer" value="90.00" onchange="addPrice(this)" />
+        <label>Washing Machine with Dryer:</label>
+      <td>
+        <div class="price-container text-bold">
+          <b>PHP</b>90.00
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="Dryer" value="60.00" onchange="addPrice(this)" />
+        <label>Dryer:</label>
+      </td>
+      <td>
+        <div class="price-container text-bold">
+          <b>PHP</b>60.00
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="Automatic_WashingMachine" value="120.00" onchange="addPrice(this)" />
+        <label>Automatic Washing Machine:</label>
+      </td>
+      <td>
+        <div class="price-container text-bold">
+          <b>PHP</b>120.00
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="checkbox" name="Extension" value="30.00" onchange="addPrice(this)" />
+        <label>Extension:</label>
+      </td>
+      <td>
+        <div class="price-container text-bold">
+          <b>PHP</b>30.00
+        </div>
+      </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<div class="recalculate-text text-right text-underline"><b>Total:<b/><span id="result"><b>0</b></span></div>
+<b>
+<br>
+<br>
+<a href="about"target="_top">Back</a>
+<a href="delivery"target="_top">Next</a>
+</b>
+</center>
+</form>
+
+
+</body>
+</html>
